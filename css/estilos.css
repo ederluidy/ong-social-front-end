@@ -170,3 +170,39 @@ nav a:focus {
         padding: 1.25rem;
     }
 }
+
+/* Acessibilidade: link para pular a navegação */
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 1rem;
+    z-index: 1000;
+    background-color: #FFFFFF;
+    color: #0B4F8A;
+    padding: 0.75rem 1rem;
+    border: 2px solid #0B4F8A;
+    border-radius: 0.25rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+/* Foco visível para navegação por teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #FFBF47;
+    outline-offset: 3px;
+}
+
+/* Reforça o foco nos links do menu */
+nav a:focus-visible {
+    outline: 3px solid #FFBF47;
+    outline-offset: 4px;
+    border-radius: 0.2rem;
+}
