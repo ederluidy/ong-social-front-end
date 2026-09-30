@@ -18,6 +18,9 @@
 
 <body>
 
+    <!-- Permite que usuários de teclado pulem diretamente para o conteúdo -->
+    <a class="skip-link" href="#app">Pular para o conteúdo principal</a>
+
     <header class="cabecalho">
         <div class="container">
             <h1 class="logo">ONG Social</h1>
@@ -30,7 +33,11 @@
         </div>
     </header>
 
-    <main id="app" class="container">
+    <main
+        id="app"
+        class="container"
+        tabindex="-1"
+        aria-live="polite">
         <!-- O conteúdo da SPA será inserido aqui pelo JavaScript -->
     </main>
 
